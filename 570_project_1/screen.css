@@ -1,0 +1,185 @@
+html{
+background-color:#ffffff;
+}
+
+#header{
+background:url(images/header.png) repeat-x 0 0;
+
+}
+
+
+body {
+width:960px;
+background-color:#ffffff;
+margin-left: 200px;
+}
+
+h1{
+
+font-family: "Andale Mono";	
+margin-left: 100px;
+margin-top: 100px;
+font-size:40px;
+}
+
+h2{
+font-family: "Andale Mono";
+margin-left: 110px;
+}
+
+h3{
+font-family: "Andale Mono";	
+}
+
+
+
+
+
+#welcome{
+	margin-top: 20px;
+	margin-left: 380px;
+	font-family: "Andale Mono";
+	text-align: center;
+}
+
+#nav {
+    font-family: "Andale Mono";
+    font-size:12;
+    margin-left: auto;
+    width: 960px;
+   
+}
+  
+#nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+  
+#nav a:link,
+#nav a:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+  
+#nav a {
+    display: block;
+    padding: 6px 8px;
+ 
+}
+  
+#nav li {
+    float: left;
+    background-color: #000000;
+    width: 160px;
+    margin-right: 1px;
+    position: relative;
+   /*  border-radius: 12px 12px 0px 0px; */
+}
+ 
+#nav li li{
+    width: 75px;
+    margin-top: 1px;
+    color: #ffffff;
+    text-align: center;
+}
+ 
+#nav li:hover {
+    background-color: #555555;
+}
+#nav li li:hover {
+    background-color: #757575;
+}   
+ 
+  
+#nav ul ul  {
+    position: absolute;
+    visibility: hidden;
+}
+  
+#nav ul ul ul{
+    position: absolute;
+    left: 100%;
+    top: -2px;
+    border: solid 1px transparent;
+}  
+ 
+#nav li:hover > ul {
+    visibility: visible;
+}
+
+
+/*
+
+nav{
+
+font-family: "Times serif";
+font-size:18;
+
+width: 960px;
+
+}
+*/
+
+nav ul li{
+	
+	display: inline-block;
+		
+}
+
+a:link    {color:black;text-decoration:none}
+a:visited {color:black;}
+a:hover   {color:#ff7a93;text-decoration: underline}
+a:active  {color:black;}
+
+
+footer{
+margin-top: 20px;
+margin-left: 420px;
+font-family: "Andale Mono";
+/* text-align: center; */
+}
+
+#wrapper{
+	
+	margin-left: 110px;
+	
+}
+
+#calendar{
+	text-align: right;
+
+}
+
+.main {
+width:200px;
+border:1px solid black;
+}
+
+.month {
+background-color:black;
+font:bold 12px verdana;
+color:white;
+}
+
+.daysofweek {
+background-color:gray;
+font:bold 12px verdana;
+color:white;
+}
+
+.days {
+font-size: 12px;
+font-family:verdana;
+color:black;
+background-color: white;
+padding: 2px;
+}
+
+.days #today{
+font-weight: bold;
+color: red;
+}
+
+
+
