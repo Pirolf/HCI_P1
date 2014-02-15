@@ -1,0 +1,82 @@
+<html>
+<head>
+<meta content="charset=utf-8">
+	<title>HOME</title>
+
+	<link href="screen.css" rel="stylesheet" type="text/css" />
+	
+	<link rel="stylesheet" type="text/css" href="styles.css" />
+	<link rel="stylesheet" type="text/css" href="colortip-1.0/colortip-1.0-jquery.css"/>
+	<script type="text/javascript" src="basiccalendar.js"></script>
+	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script type="text/javascript" src="colortip-1.0/colortip-1.0-jquery.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+	
+
+<img src="images/header.png"/>
+
+<!-- Menu Tabs -->
+<div id="nav">
+<div class="menu">
+		<ul>
+    		<li><a href="index.html">HOME</a></li>    			
+    	
+			<li title="Step 1: Create your profile" class="black"><a href="profile.html">PROFILE</a>  </li>
+    		<li title="Step 2: Get a site recommendation based your profile" class="black"><a href="travel.html">DESTINATION</a>  </li>
+    		 
+			<li title="Step 3: Look at available deals for the chosen site" class="black"><a href=#>DEALS</a>  </li>
+				
+			<li title="Step 4: Find a travel buddy match based on selected criteria" class="black"><a href=#>MATCH</a></li>			
+			<li style="width:20px;padding:1px;margin-left:1px;"><img src="account3.png"/>
+				<ul>
+					<li><a href=#>log out</a></li>
+					<li><a href=#>manage account</a></li>
+				</ul>
+			</li>
+  		</ul>
+</div>
+</div>
+
+<!-- Search Bar -->
+<form method="get">   <!-- action= -->
+<table cellpadding="0px" cellspacing="0px"> 
+<tr> 
+<td style="border-style:solid none solid solid;border-color:#4B7B9F;border-width:1px;">
+<input type="text" name="zoom_query" style="width:100px; border:0px solid; height:17px; padding:0px 3px; position:relative;"> 
+</td>
+<td style="border-style:solid;border-color:#4B7B9F;border-width:1px;margin-left:1px;"> 
+<input type="submit" value="" style="border-style: none; background: url('search5.png') no-repeat; width: 22px; height: 24px;">
+</td>
+</tr>
+</table>
+</form>
+
+
+</head>
+
+<body>
+
+
+<br>
+
+<form id="frmSearch" class="search2" method="get" action="default.html" />
+<input class="search2" id="txtSearch" type="text" name="serach_bar" size="31" maxlength="255"       
+value="" style="left: 396px; top: 153px; width: 293px; height: 26px;" />
+<input class="search1" type="submit" name="submition" value="Search" style=" padding-  
+bottom:20px; left: 691px; top: 153px; height: 23px" />
+<input class="search2" type="hidden" name="sitesearch" value="default.html" />
+<br>
+
+<script type="text/javascript">
+    document.getElementById('frmSearch').onsubmit = function() {
+        window.location = 'http://www.google.com/search?q=juliajanicki.com ' + document.getElementById('txtSearch').value;
+        return false;
+    }
+</script>
+
+<footer>
+&copy; Julia Janicki 2014
+</footer>
+</body>
+</html>
