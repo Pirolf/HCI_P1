@@ -57,7 +57,7 @@
 						</form>
 					</div>
 						<footer>
-							<a href="#banner" class="button circled scrolly">Start</a>
+							<a href="#banner" class="button circled scrolly">Explore!</a>
 						</footer>
 					</div>
 					
@@ -67,9 +67,7 @@
 							<li><span><a href="index.html">Home</a></span></li>
 							<li>
 								<span><a href="profile.html">Profile</a></span>
-								
-									</li>
-									
+							</li>
 							<li><span><a href="left-sidebar.html"><!-- Left Sidebar -->Destinations</a></span></li>
 							<li><span><a href="match.html"><!-- Right Sidebar -->Match</a></span></li>
 							<li><span><a href="about.html"><!-- No Sidebar -->About</a></span></li>
@@ -80,8 +78,23 @@
 
 			</div>
 		<!-- Banner -->
-			<!--div id="banner">
-				<h2>Hi. You're looking at <strong>Helios</strong>.</h2>
+		<script>
+			$(document).ready(function(){
+				$("a.button.circled.scrolly").click(function(){
+					if($(".map_explore").css("display") == "none"){
+						$("a.button.circled.scrolly").attr("href", "#header");
+						$(".map_explore").css("display", "block");
+						
+					}else{
+						$("a.button.circled.scrolly").attr("href", "#banner");
+						$(".map_explore").css("display", "none");
+						
+					}
+				});
+			});
+		</script>
+			<div id="banner" class='map_explore'>
+				<h2>Google Map goes<strong>Here</strong>!</h2>
 				<span class="byline">
 					A (free) responsive site template by <a href="http://html5up.net/">HTML5 UP</a>.
 					Built on <a href="http://skeljs.org">skelJS</a> and released under the <a href="http://html5up.net/license/">CCA</a> license.
