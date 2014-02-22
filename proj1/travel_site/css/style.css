@@ -7,7 +7,85 @@
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
-
+/*******Home*******/
+.user_login{
+	position: relative;	
+	top:150px;
+	text-align: right;
+	right:15px;
+}
+form.user_pw_container, form.user_login_submit{
+	display:inline;
+	float:left;
+}
+form.quick_login label{
+	display:inline;
+}
+form.quick_login div{
+	display:inline;
+}
+form.quick_login input[type=email], form.quick_login input[type=password]{
+	width:140px;
+	height:35px;
+	margin-right:5px;
+	border-radius:10px;
+	border-style:solid;
+	border-color:white;
+}
+form.quick_login #user_login_submit_button{
+	width:80px;
+	height:35px;
+}
+/*******Login******/
+div.creds_email, div.creds_pw1, div.creds_pw2, div.login_submit{
+	text-align: center;
+}
+input[type=submit], #user_login_submit_button{
+	-moz-box-shadow:inset 0px -1px 4px -4px #bbdaf7;
+	-webkit-box-shadow:inset 0px -1px 4px -4px #bbdaf7;
+	box-shadow:inset 0px -1px 4px -4px #bbdaf7;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #79bbff), color-stop(1, #378de5) );
+	background:-moz-linear-gradient( center top, #79bbff 5%, #378de5 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#79bbff', endColorstr='#378de5');
+	background-color:#79bbff;
+	-webkit-border-top-left-radius:15px;
+	-moz-border-radius-topleft:15px;
+	border-top-left-radius:15px;
+	-webkit-border-top-right-radius:15px;
+	-moz-border-radius-topright:15px;
+	border-top-right-radius:15px;
+	-webkit-border-bottom-right-radius:15px;
+	-moz-border-radius-bottomright:15px;
+	border-bottom-right-radius:15px;
+	-webkit-border-bottom-left-radius:15px;
+	-moz-border-radius-bottomleft:15px;
+	border-bottom-left-radius:15px;
+	text-indent:0;
+	border:1px solid #84bbf3;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Trebuchet MS;
+	font-size:18px;
+	font-weight:bold;
+	font-style:normal;
+	height:42px;
+	line-height:42px;
+	width:127px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #528ecc;
+}
+input[type=submit]:hover, #user_login_submit_button:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #378de5), color-stop(1, #79bbff) );
+	background:-moz-linear-gradient( center top, #378de5 5%, #79bbff 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#378de5', endColorstr='#79bbff');
+	background-color:#378de5;
+	cursor: pointer;
+}
+input[type=submit]:active, #user_login_submit_button:active {
+	position:relative;
+	top:1px;
+}
 /*********************************************************************************/
 /* Basic                                                                         */
 /*********************************************************************************/
@@ -1054,19 +1132,19 @@
 	#header
 	{
 		position: relative;
-		background-image: url('../images/header.png');
+		background-image: url('../images/header2.png');
 		background-size: cover;
 		background-position: center center;
 		/*background-attachment: fixed;*/
 		color: #fff;
 		text-align: center;
-		padding: 2.5em 0 2em 0;
+		padding: 4.5em 0 4em 0;
 		cursor: default;
 	}
 
 		.homepage #header
 		{
-			padding: 4em 0 4em 0;
+			padding: 2em 0 2em 0;
 		}
 	
 			.homepage #header .overlay
@@ -1097,7 +1175,7 @@
 			position: relative;
 			z-index: 1;
 			margin: 0;
-			padding: 4em 0 0 0;
+			padding: 1em 0 0 0;
 		}
 	
 		#header h1
@@ -1382,7 +1460,7 @@
 	{
 		position: relative;
 		overflow: hidden;
-		padding: 6em 0 6em 0;
+		padding: 2em 0 2em 0;
 		background: #2b252c;
 		color: #fff;
 	}
