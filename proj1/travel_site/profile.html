@@ -46,7 +46,7 @@
 							</li>
 							<li><span><a href="left-sidebar.html"><!-- Left Sidebar -->Destinations</a></span></li>
 							<li><span><a href="match.html"><!-- Right Sidebar -->Match</a></span></li>
-							<li><span><a href="login.html"><!-- No Sidebar -->Sign Up</a></span></li>
+							<li><span><a><!-- No Sidebar -->Sign Out</a></span></li>
 							<li><span><a href="about.html"><!-- No Sidebar -->About</a></span></li>
 						</ul>
 					</nav>
@@ -61,28 +61,65 @@
 						<div class="12u skel-cell-important" id="content">
 							<article id="main" class="special">
 								<header>
-									<h2><a href="#">Sign Up</a></h2>
+									<h2><a href="#">My Profile</a></h2>
 									<span class="byline">
 										Morbi convallis lectus malesuada sed fermentum dolore amet
 									</span>
 								</header>
-								<form class="login">
-									<div class="creds_email">
-										<label for="signup_email">Email</label>
-										<input name="email" type="email" id="signup_email" placeholder="Email"></input>
+								<form class="profile">
+									<div class="full_name">
+										<label for="f_name">First Name</label>
+										<input name="f_name" type="text" id="f_name"></input>
+										<label for="l_name">Last Name</label>
+										<input name="l_name" type="text" id="l_name"></input>
 									</div>
-									<div class="creds_pw">
-										<div class="creds_pw1">
-										<label for="signup_pw1">Password</label>
-										<input name="pw" type="password" id="signup_pw1">
-										</input>
+									<div class='birth_sex'>
+										<label for='birt_year'>Year of Birth</label>
+										<input name='birth_year' type='date' id='birth_year'></input>
+										<label for='profile_sex'>Sex</label>
+										<select name='sex' type='select' id='profile_sex'>
+											<option value=''>--Select--</option>
+											<option value='Female'>Female</option>
+											<option value="Male">Male</option>
+											<option value="Other">Other</option>
+										</select>
 									</div>
-									<div class='creds_pw2'>
-										<input name="pw_repeat" type="password" id="signup_pw2" placeholder="Please retype"></input>
+									<div class="region_country">
+										<label for='profile_region'>Areas of Interest</label>
+										<div class='region_interest' id='profile_region'>
+											<input type='checkbox' name='region' value='Asia'>Asia</input>
+											<input type='checkbox' name='region' value="N_amer">North America</option>
+											<input type='checkbox' name='region' value='S_amer'>South America</input>
+											<input type='checkbox' name='region' value='Pacific'>Pacific</input>
+											<input type='checkbox' name='region' value='Europe'>Europe</input>
+											<input type='checkbox' name='region' value='Africa'>Africa</input>
+										</div>
+										<label for='personal_interest'>Interests</label>
+										<div class='personal_interest' id='personal_interest'>
+											
+											<div class="row" >
+											<section class="4u" id='interest_col1'>
+												<input type='checkbox' name='personal_interest' value='Backpacking'>Backpacking</input>
+												<input type='checkbox' name='personal_interest' value='Hiking'>Hiking</input>
+												<input type='checkbox' name='personal_interest' value='Photography'>Photography</input>
+												<input type='checkbox' name='personal_interest' value='Sailing'>Sailing</input>
+												<input type='checkbox' name='personal_interest' value='Skating'>Skating</input>
+												<input type='checkbox' name='personal_interest' value='Skiing'>Skiing</input>
+											</section>
+												
+											<section class="4u" id='interest_col2'>
+												<input type='checkbox' name='personal_interest' value='Hunting'>Hunting</input>
+												<input type='checkbox' name='personal_interest' value='Kayaking'>Kayaking</input>
+												<input type='checkbox' name='personal_interest' value='Rockclimbing'>Rockclimbing</input>
+												<input type='checkbox' name='personal_interest' value='Diving'>Diving</input>
+												<input type='checkbox' name='personal_interest' value='Surfing'>Surfing</input>
+											</section>
+											</div>
+										</div>
 									</div>
-									</div>
-									<div class='login_submit'>
-									<input type="submit" value="Sign Up!">
+
+									<div class='profile_submit'>
+									<input type="submit" value="Update">
 									</input>
 								</div>
 									</div>
