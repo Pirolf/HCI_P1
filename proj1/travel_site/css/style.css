@@ -39,6 +39,16 @@ form.quick_login #user_login_submit_button{
 	width:80px;
 	height:35px;
 }
+/*******Destinations****/
+section.dest_list_container{
+	display:inline-block;
+	float:left;
+	
+}
+section.dlc_col1{
+	padding-top:0;
+	margin-right:3%;
+}
 /*******Login******/
 div.creds_email, div.creds_pw1, div.creds_pw2, div.login_submit{
 	text-align: center;
@@ -1452,7 +1462,7 @@ input[type=submit]:active, #user_login_submit_button:active {
 	
 		#main section:first-of-type
 		{
-			padding-top: 2em;
+			/*padding-top: 2em;*/
 		}		
 	
 /*********************************************************************************/
