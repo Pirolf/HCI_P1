@@ -9,8 +9,8 @@
 */
 /*******Home*******/
 .user_login{
-	position: relative;	
-	top:150px;
+	position: absolute;	 /* relative */
+	top:400px;  /* 150px */
 	text-align: right;
 	right:15px;
 }
@@ -1307,6 +1307,7 @@ input[type=submit]:active, #user_login_submit_button:active {
 				-o-transition: color 0.35s ease-in-out, border-color 0.35s ease-in-out;
 				-ms-transition: color 0.35s ease-in-out, border-color 0.35s ease-in-out;
 				transition: color 0.35s ease-in-out, border-color 0.35s ease-in-out;
+				font-size: 26px;
 			}
 			
 				#nav > ul > li.active

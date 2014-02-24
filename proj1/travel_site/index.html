@@ -17,12 +17,26 @@
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-panels.min.js"></script>
 		<script src="js/init.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 		<noscript>
 			<link rel="stylesheet" href="css/skel-noscript.css" />
 			<link rel="stylesheet" href="css/style.css" />
 			<link rel="stylesheet" href="css/style-desktop.css" />
 			<link rel="stylesheet" href="css/style-noscript.css" />
 		</noscript>
+		<style type="text/css">
+		#map {
+				width: 100%;
+				height: 400px;
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				border-style: groove;
+				border-color: black;
+				border-width: 4px;
+			}
+			</style>
+
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
 	</head>
 	<body class="homepage">
@@ -40,7 +54,13 @@
 								Step 3: Find a travel buddy
 							</span>
 						</header>
+						<footer>
+							<a href="#banner" class="button circled scrolly">Explore!</a>
+						</footer>
+					
+						
 					<div class='user_login'>
+						
 						<form class='quick_login'>
 							<div class='user_email_container'>
 							<label for='user_email'>Email</label>
@@ -54,11 +74,22 @@
 						<div class='user_login_submit'>
 							<input type='submit' id='user_login_submit_button' value='Log in'></input>
 						</div>
+						
+						
 						</form>
+						
+						<form class='quick_login' action="login.html">
+						<div class='user_login_submit'>
+							<input type='submit' id='user_login_submit_button' value='Sign up'></input>
+						</div>
+						</form>
+						
+						
 					</div>
-						<footer>
-							<a href="#banner" class="button circled scrolly">Explore!</a>
-						</footer>
+					
+					
+						
+						
 					</div>
 					
 				<!-- Nav -->
@@ -68,7 +99,7 @@
 							<li>
 								<span><a href="profile.html">Profile</a></span>
 							</li>
-							<li><span><a href="left-sidebar.html"><!-- Left Sidebar -->Destinations</a></span></li>
+							<li><span><a href="destinations.html"><!-- Left Sidebar -->Destinations</a></span></li>
 							<li><span><a href="match.html"><!-- Right Sidebar -->Match</a></span></li>
 							<li><span><a href="about.html"><!-- No Sidebar -->About</a></span></li>
 						</ul>
@@ -78,6 +109,8 @@
 
 			</div>
 		<!-- Banner -->
+		
+		
 		<script>
 			$(document).ready(function(){
 				$("a.button.circled.scrolly").click(function(){
@@ -94,11 +127,19 @@
 			});
 		</script>
 			<div id="banner" class='map_explore'>
-				<h2>Google Map goes<strong>Here</strong>!</h2>
-				<span class="byline">
-					A (free) responsive site template by <a href="http://html5up.net/">HTML5 UP</a>.
-					Built on <a href="http://skeljs.org">skelJS</a> and released under the <a href="http://html5up.net/license/">CCA</a> license.
-				</span>
+				<!-- map goes here -->
+				<div id="map"></div>
+				<!-- script for map -->
+		<script type="text/javascript">
+			
+			var map = new google.maps.Map(document.getElementById('map'), {
+				zoom: 2,
+				center: new google.maps.LatLng(16.497893,2.912607),
+				mapTypeId: google.maps.MapTypeId.TERRAIN
+ 			});
+ 		</script>
+ 		
+				
 			</div>
 
 		<!-- Carousel -->
