@@ -17,14 +17,14 @@
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-panels.min.js"></script>
 		<script src="js/init.js"></script>
-		<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyCv9zVjNyONG-f2Z_Wi1VcnRX_BTf1iks8&sensor=false"></script>
 		<noscript>
 			<link rel="stylesheet" href="css/skel-noscript.css" />
 			<link rel="stylesheet" href="css/style.css" />
 			<link rel="stylesheet" href="css/style-desktop.css" />
 			<link rel="stylesheet" href="css/style-noscript.css" />
 		</noscript>
-		<style type="text/css">
+		<!--style type="text/css">
 		#map {
 				width: 100%;
 				height: 400px;
@@ -35,7 +35,7 @@
 				border-color: black;
 				border-width: 4px;
 			}
-			</style>
+			</style-->
 
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
 	</head>
@@ -63,26 +63,22 @@
 						
 						<form class='quick_login'>
 							<div class='user_email_container'>
-							<label for='user_email'>Email</label>
-							<input type='email' name='user_email' id='user_email'>
+							<!--label for='user_email'>Email</label-->
+							<input type='email' name='user_email' id='user_email' placeholder='Email'>
 							</input>
 						</div>
 						<div class='user_pw_container'>
-							<label for='user_pw'>Password</label>
-							<input type='password' name='user_pw' id='user_pw'></input>
+							<!--label for='user_pw'>Password</label-->
+							<input type='password' name='user_pw' id='user_pw' placeholder='Password'></input>
 						</div>
 						<div class='user_login_submit'>
 							<input type='submit' id='user_login_submit_button' value='Log in'></input>
+							<a href='login.html'>Sign Up</a>
 						</div>
 						
 						
 						</form>
 						
-						<form class='quick_login' action="login.html">
-						<div class='user_login_submit'>
-							<input type='submit' id='user_login_submit_button' value='Sign up'></input>
-						</div>
-						</form>
 						
 						
 					</div>
@@ -118,6 +114,8 @@
 					if($(".map_explore").css("display") == "none"){
 						$("a.button.circled.scrolly").attr("href", "#header");
 						$(".map_explore").css("display", "block");
+						$(".map_explore").css("padding","10px");
+						google.maps.event.trigger(map, 'resize');
 						
 					}else{
 						$("a.button.circled.scrolly").attr("href", "#banner");
@@ -129,19 +127,46 @@
 		</script>
 			<div id="banner" class='map_explore'>
 				<!-- map goes here -->
-				<div id="map-canvas"></div>
+				<div id="map-canvas" style='height:600px; width:100%'></div>
 				<!-- script for map -->
 		<script type="text/javascript">
 			
-			var map;
+			map = null;
 			function initialize() {
  				var mapOptions = {
-    				zoom: 2,
-    				center: new google.maps.LatLng(-34.397, 150.644),
-    				//mapTypeId: google.maps.MapTypeId.TERRAIN
+    				zoom: 5,
+    				center: new google.maps.LatLng(53.23277, -24.644),
+    				mapTypeId: google.maps.MapTypeId.TERRAIN
   				};
   				map = new google.maps.Map(document.getElementById('map-canvas'),
       			mapOptions);
+      			var marker_paris = new google.maps.Marker({
+   					 position: new google.maps.LatLng(48.8588589,2.3470599),
+    				 map: map,
+				});
+				var marker_barcelona = new google.maps.Marker({
+   					 position: new google.maps.LatLng(41.39479,2.1487679),
+    				 map: map,
+				});
+				var marker_malta = new google.maps.Marker({
+   					 position: new google.maps.LatLng(35.9439789,14.3794248),
+    				 map: map,
+				});
+				var marker_athens = new google.maps.Marker({
+   					 position: new google.maps.LatLng(37.9908372,23.7383394),
+    				 map: map,
+				});
+				var marker_vienna = new google.maps.Marker({
+   					 position: new google.maps.LatLng(48.2206849,16.3800599),
+    				 map: map,
+				});
+				var vienna_info_content = "<p><a href='destinations.html'>Vienna, Austria</a></p>";
+				var infowindow = new google.maps.InfoWindow({
+      				content:  vienna_info_content 
+  				});
+  				google.maps.event.addListener(marker_vienna, 'click', function() {
+    				infowindow.open(map,marker_vienna);
+ 			    });
 			}
 
 			google.maps.event.addDomListener(window, 'load', initialize);
