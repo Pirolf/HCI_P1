@@ -9,13 +9,16 @@
 */
 /*******Home*******/
 .user_login{
-	position: absolute;	 /* relative */
-	top:400px;  /* 150px */
+	/*position: absolute;*/	 /* relative */
+	/*top:400px; */
 	text-align: right;
-	right:15px;
+	margin-right:30px;
 }
 .map_explore{
 	display: none;
+}
+.search_container{
+	margin-bottom:20px;
 }
 form.user_pw_container, form.user_login_submit{
 	display:inline;
@@ -27,13 +30,17 @@ form.quick_login label{
 form.quick_login div{
 	display:inline;
 }
-form.quick_login input[type=email], form.quick_login input[type=password]{
+form.quick_login input[type=email], form.quick_login input[type=password], 
+form.search_dest_form input[type=search]{
 	width:140px;
 	height:35px;
 	margin-right:5px;
 	border-radius:10px;
 	border-style:solid;
 	border-color:white;
+}
+form.search_dest_form input[type=search]{
+	width:240px;
 }
 form.quick_login #user_login_submit_button{
 	width:80px;
