@@ -15,12 +15,25 @@
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="nivo-slider/themes/default/default.css" type="text/css" media="screen" />
+    	<link rel="stylesheet" href="nivo-slider/themes/light/light.css" type="text/css" media="screen" />
+    		<!--link rel="stylesheet" href="nivo-slider/themes/dark/dark.css" type="text/css" media="screen" />
+   			<link rel="stylesheet" href="nivo-slider/themes/bar/bar.css" type="text/css" media="screen" /-->
+    	<link rel="stylesheet" href="nivo-slider/nivo-slider.css" type="text/css" media="screen" />
+
 		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
 		<script src="js/jquery.min.js"></script>
 		<script src="js/jquery.dropotron.min.js"></script>
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-panels.min.js"></script>
 		<script src="js/init.js"></script>
+		<script type="text/javascript" src="nivo-slider/jquery.nivo.slider.js"></script>
+		<script type="text/javascript">
+    		$(window).load(function() {
+       			 $('#slider').nivoSlider();
+   			 });
+   		</script>
+
 		<noscript>
 			<link rel="stylesheet" href="css/skel-noscript.css" />
 			<link rel="stylesheet" href="css/style.css" />
@@ -203,7 +216,17 @@
 										Morbi convallis lectus malesuada sed fermentum dolore amet
 									</span>
 								</header>
-								<a href="http://mdomaradzki.deviantart.com/art/Planet-Bronte-339258500" class="image featured"><img src="images/quito-3.jpg" alt="" /></a>
+								<!--slider-->
+     							   <div class="slider-wrapper theme-default">
+           							 	<div id="slider" class="nivoSlider">
+               								<img src="images/bali.jpg" data-thumb="images/bali.jpg" alt="" />
+               								<img src="images/bali2.jpg" data-thumb="images/bali2.jpg" alt="" title="Bali" />
+                							<img src="images/costa.jpg" data-thumb="images/costa.jpg" alt="" title="Costa Beach" />
+                							<img src="images/costa2.jpg" data-thumb="images/costa.jpg" alt="" title="Costa Rico" />
+           							 	</div>
+       					 			</div>
+
+								<!--a href="http://mdomaradzki.deviantart.com/art/Planet-Bronte-339258500" class="image featured"><img src="images/quito-3.jpg" alt="" /></a-->
 								<p>
 									Commodo id natoque malesuada sollicitudin elit suscipit. Curae suspendisse mauris posuere accumsan massa 
 									posuere lacus convallis tellus interdum. Amet nullam fringilla nibh nulla convallis ut venenatis purus 
