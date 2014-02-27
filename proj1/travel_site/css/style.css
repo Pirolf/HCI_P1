@@ -8,6 +8,39 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 /*******Home*******/
+.trav_duration, .trav_season{
+	float:left;
+	display:inline;
+	width:40%;
+}
+.trav_duration{
+	margin-right:2%;
+}
+.trav-_season{
+	margin-left:2%;
+}
+.duration_season{
+	clear:both;
+}
+.adv_submit{
+	clear:both;
+}
+form.adv_search{
+	float:left;
+}
+form.adv_search div{
+	margin-bottom: 20px;
+}
+.cost_range .lo{
+	display:inline;
+	float:left;
+}
+.cost_range .high{
+	float:left;
+}
+.location_weather{
+	clear:both;
+}
 span.read-more a, span.read-less a{
 	font-weight:bold;
 	color:#df7366;
@@ -112,7 +145,8 @@ form.quick_login div{
 form.quick_login input[type=email], form.quick_login input[type=password], 
 form.search_dest_form input[type=search], form.login input[type=email],
 form.login input[type=password], 
-form.profile input[type=text], form.profile select, form.profile input[type=date]{
+form.profile input[type=text], form.profile select, form.profile input[type=date],
+form.adv_search select, form.adv_search input[type=number]{
 	width:140px;
 	height:35px;
 	margin-right:5px;
@@ -120,10 +154,13 @@ form.profile input[type=text], form.profile select, form.profile input[type=date
 	border-style:groove;
 	border-color:white;
 }
+form.adv_search select#est_duration, form.adv_search select#pref_season{
+	width:100%;
+}
 form.profile input[type=text], form.profile select, form.profile input[type=date], form.profile input[type=submit]{
 	width:200px;
 }
-form.login label, form.profile label{
+form.login label, form.profile label, form.adv_search label{
 	color:#464368;
 	font-weight: bold;
 	font-size:20px;
