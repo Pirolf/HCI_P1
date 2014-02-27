@@ -112,18 +112,11 @@
 		
 		<script>
 			$(document).ready(function(){
-				$("a.button.circled.scrolly").click(function(){
-					if($(".map_explore").css("display") == "none"){
-						$("a.button.circled.scrolly").attr("href", "#header");
-						$(".map_explore").css("display", "block");
-						$(".map_explore").css("padding","10px");
-						google.maps.event.trigger(map, 'resize');
-						
-					}else{
-						$("a.button.circled.scrolly").attr("href", "#banner");
-						$(".map_explore").css("display", "none");
-						
-					}
+				$("a.button.circled.scrolly").click(function() {
+  					$(".map_explore").slideToggle( "slow", function() {
+  						google.maps.event.trigger(map, 'resize');
+   					 // Animation complete.
+  					});
 				});
 			});
 		</script>
