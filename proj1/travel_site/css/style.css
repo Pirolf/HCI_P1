@@ -23,6 +23,41 @@
 .search_container.search_sub{
 	margin:30px;
 }
+.region_interest input[type=checkbox]{
+	/*margin-right:20px;*/
+}
+#interest_rol1 input, #interest_rol2 input{
+	display:block;
+}
+form.profile{
+	width:60%;
+}
+form.profile div.f_name, form.profile div.birth{
+	display:inline;
+	float:left;
+	margin-right:20px;
+}
+form.profile select{
+	width:20%;
+}
+form.profile div.full_name{
+	margin-bottom:10px;
+}
+form.profile div.region_country{
+	margin-top:20px;
+	margin-bottom:20px;
+}
+form.profile div.birth_sex{
+	margin-top:10px;
+	margin-bottom:10px;
+}
+div.region_interest_container{
+	margin-bottom:20px;
+}
+
+form.profile div.region_country div.personal_interest_container{
+	margin-top:10px;
+}
 form.user_pw_container, form.user_login_submit{
 	display:inline;
 	float:left;
@@ -35,7 +70,8 @@ form.quick_login div{
 }
 form.quick_login input[type=email], form.quick_login input[type=password], 
 form.search_dest_form input[type=search], form.login input[type=email],
-form.login input[type=password]{
+form.login input[type=password], 
+form.profile input[type=text], form.profile select, form.profile input[type=date]{
 	width:140px;
 	height:35px;
 	margin-right:5px;
@@ -43,11 +79,14 @@ form.login input[type=password]{
 	border-style:groove;
 	border-color:white;
 }
-form.login label{
+form.profile input[type=text], form.profile select, form.profile input[type=date], form.profile input[type=submit]{
+	width:200px;
+}
+form.login label, form.profile label{
 	color:#464368;
 	font-weight: bold;
-	font-size:22px;
-	font-family: Geogia;
+	font-size:20px;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 form.login input[type=email], form.login input[type=password]{
 	border-color:#464368;

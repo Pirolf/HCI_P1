@@ -47,7 +47,7 @@
 							<li>
 								<span><a href="profile.html">Profile</a></span>
 							</li>
-							<li><span><a href="destinations.html"><!-- Left Sidebar -->Destinations</a></span></li>
+							<li><span><a href="destlist.html"><!-- Left Sidebar -->Destinations</a></span></li>
 							<li><span><a href="match.html"><!-- Right Sidebar -->Match</a></span></li>
 						
 							<li><span><a href="about.html"><!-- No Sidebar -->About</a></span></li>
@@ -62,87 +62,95 @@
 				<div class="container">
 					<div class="row">
 						<div class="12u skel-cell-important" id="content">
-							<article id="main" class="special">
+							<article id="main" class="12u special">
 								
-<header>
-									<h2 style="text-align:left;">My Profile</h2>
-								<!--
-	<span class="byline">
+								<header>
+									<h2>My Profile</h2>
+							
+									<span class="byline">
 										Morbi convallis lectus malesuada sed fermentum dolore amet
 									</span>
--->
-								</header>
 
-								<form class="profile" action="success2.html">
-									<div class="full_name">
-										<label for="f_name">First Name</label>
-										<input name="f_name" type="text" id="f_name"></input>
-										<label for="l_name">Last Name</label>
-										<input name="l_name" type="text" id="l_name"></input>
-									</div>
-									<div class='birth_sex'>
-										<label for='birt_year'>Year of Birth</label>
-										<input name='birth_year' type='date' id='birth_year'></input>
-										<label for='profile_sex'>Sex</label>
-										<select name='sex' type='select' id='profile_sex'>
-											<option value=''>--Select--</option>
-											<option value='Female'>Female</option>
-											<option value="Male">Male</option>
-											<option value="Other">Other</option>
-										</select>
-									</div>
+								</header>
+								<div class="row">
+									<div class='12u'>
+										<div class='3u' style='display:inline;float:left'><p></p></div>
+										<form class="6u profile" style='display:inline;float:left' action="success2.html">
+											<div class="full_name">
+												<div class='f_name'>
+													<label for="f_name">First Name</label>
+													<input name="f_name" type="text" id="f_name"></input>
+												</div>
+												<div class='l_name'>
+													<label for="l_name">Last Name</label>
+													<input name="l_name" type="text" id="l_name"></input>
+												</div>
+											</div>
+											<div class='birth_sex'>
+												<div class='birth'>
+													<label for='birth_year'>Year of Birth</label>
+													<input name='birth_year' type='date' id='birth_year'></input>
+												</div>
+												<div class='gender'>
+													<label for='profile_sex'>Sex</label>
+														<select name='sex' type='select' id='profile_sex'>
+															<option value=''>--Select--</option>
+															<option value='Female'>Female</option>
+															<option value="Male">Male</option>
+															<option value="Other">Other</option>
+														</select>
+													</div>
+												</div>
 									<div class="region_country">
-										<label for='profile_region'>Areas of Interest</label>
-										<div class='region_interest' id='profile_region'>
-											<input type='checkbox' name='region' value='Asia'>Asia</input>
-											<input type='checkbox' name='region' value="N_amer">North America</option>
-											<input type='checkbox' name='region' value='S_amer'>South America</input>
-											<input type='checkbox' name='region' value='Pacific'>Pacific</input>
-											<input type='checkbox' name='region' value='Europe'>Europe</input>
-											<input type='checkbox' name='region' value='Africa'>Africa</input>
+										<div class='region_interest_container'>
+											<label for='profile_region'>Areas of Interest</label>
+											<div class='region_interest' id='profile_region'>
+												<input type='checkbox' name='region' value='Asia'>Asia</input>
+												<input type='checkbox' name='region' value="N_amer">North America</option>
+												<input type='checkbox' name='region' value='S_amer'>South America</input>
+												<input type='checkbox' name='region' value='Pacific'>Pacific</input>
+												<input type='checkbox' name='region' value='Europe'>Europe</input>
+												<input type='checkbox' name='region' value='Africa'>Africa</input>
+											</div>
 										</div>
-										<label for='personal_interest'>Interests</label>
-										<div class='personal_interest' id='personal_interest'>
+										<div clas='personal_interest_container'>
+											<label for='personal_interest'>Interests</label>
+											<div class='personal_interest' id='personal_interest'>
 											
 											<div class="row" >
-											<section class="4u" id='interest_col1'>
-												<input type='checkbox' name='personal_interest' value='Backpacking'>Backpacking</input>
-												<input type='checkbox' name='personal_interest' value='Hiking'>Hiking</input>
-												<input type='checkbox' name='personal_interest' value='Photography'>Photography</input>
-												<input type='checkbox' name='personal_interest' value='Sailing'>Sailing</input>
-												<input type='checkbox' name='personal_interest' value='Skating'>Skating</input>
-												<input type='checkbox' name='personal_interest' value='Skiing'>Skiing</input>
+											<section class="3u" id='interest_col1'>
+												<ul>
+												<li><input type='checkbox' name='personal_interest' value='Backpacking'>Backpacking</input></li>
+												<li><input type='checkbox' name='personal_interest' value='Hiking'>Hiking</input></li>
+												<li><input type='checkbox' name='personal_interest' value='Photography'>Photography</input></li>
+												<li><input type='checkbox' name='personal_interest' value='Sailing'>Sailing</input></li>
+												<li><input type='checkbox' name='personal_interest' value='Skating'>Skating</input></li>
+												<li><input type='checkbox' name='personal_interest' value='Skiing'>Skiing</input></li>
+											</ul>
 											</section>
 												
-											<section class="4u" id='interest_col2'>
-												<input type='checkbox' name='personal_interest' value='Hunting'>Hunting</input>
-												<input type='checkbox' name='personal_interest' value='Kayaking'>Kayaking</input>
-												<input type='checkbox' name='personal_interest' value='Rockclimbing'>Rockclimbing</input>
-												<input type='checkbox' name='personal_interest' value='Diving'>Diving</input>
-												<input type='checkbox' name='personal_interest' value='Surfing'>Surfing</input>
+											<section class="3u" id='interest_col2'>
+												<ul>
+												<li><input type='checkbox' name='personal_interest' value='Hunting'>Hunting</input></li>
+												<li><input type='checkbox' name='personal_interest' value='Kayaking'>Kayaking</input></li>
+												<li><input type='checkbox' name='personal_interest' value='Rockclimbing'>Rockclimbing</input></li>
+												<li><input type='checkbox' name='personal_interest' value='Diving'>Diving</input></li>
+												<li><input type='checkbox' name='personal_interest' value='Surfing'>Surfing</input></li>
+											</ul>
 											</section>
 											</div>
+										</div>
 										</div>
 									</div>
 
 									<div class='profile_submit'>
-									<a href="success2.html"><input type="submit" value="Update"></a>
-									</input>
-								</div>
+										<a href="success2.html"><input type="submit" value="Update">
+										</input></a>
 									</div>
-								</form>
-								<section>
-									<header>
-										<h3></h3>
-									</header>
-						
-								</section>
-								<section>
-									<header>
-										<h3></h3>
-									</header>
-
-								</section>
+									
+										</form>
+									</div>
+								</div>
 							</article>
 						</div>
 					</div>
