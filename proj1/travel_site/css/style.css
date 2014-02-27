@@ -31,6 +31,9 @@ form.adv_search{
 form.adv_search div{
 	margin-bottom: 20px;
 }
+.row.adv_search_container:before{
+	display:none;
+}
 .cost_range .lo{
 	display:inline;
 	float:left;
