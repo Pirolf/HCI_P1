@@ -8,6 +8,42 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 /*******Home*******/
+.trav_duration, .trav_season{
+	float:left;
+	display:inline;
+	width:40%;
+}
+.trav_duration{
+	margin-right:2%;
+}
+.trav-_season{
+	margin-left:2%;
+}
+.duration_season{
+	clear:both;
+}
+.adv_submit{
+	clear:both;
+}
+form.adv_search{
+	float:left;
+}
+form.adv_search div{
+	margin-bottom: 20px;
+}
+.row.adv_search_container:before{
+	display:none;
+}
+.cost_range .lo{
+	display:inline;
+	float:left;
+}
+.cost_range .high{
+	float:left;
+}
+.location_weather{
+	clear:both;
+}
 span.read-more a, span.read-less a{
 	font-weight:bold;
 	color:#df7366;
@@ -112,7 +148,8 @@ form.quick_login div{
 form.quick_login input[type=email], form.quick_login input[type=password], 
 form.search_dest_form input[type=search], form.login input[type=email],
 form.login input[type=password], 
-form.profile input[type=text], form.profile select, form.profile input[type=date]{
+form.profile input[type=text], form.profile select, form.profile input[type=date],
+form.adv_search select, form.adv_search input[type=number]{
 	width:140px;
 	height:35px;
 	margin-right:5px;
@@ -120,10 +157,13 @@ form.profile input[type=text], form.profile select, form.profile input[type=date
 	border-style:groove;
 	border-color:white;
 }
+form.adv_search select#est_duration, form.adv_search select#pref_season{
+	width:100%;
+}
 form.profile input[type=text], form.profile select, form.profile input[type=date], form.profile input[type=submit]{
 	width:200px;
 }
-form.login label, form.profile label{
+form.login label, form.profile label, form.adv_search label{
 	color:#464368;
 	font-weight: bold;
 	font-size:20px;
@@ -146,11 +186,15 @@ form.login div.creds_pw1{
 form.search_dest_form input[type=search]{
 	width:240px;
 }
-form.quick_login #user_login_submit_button, button.sign_up_button{
+form.quick_login #user_login_submit_button, .sign_up_button{
 	width:124px;
 	height:35px;
 	padding:0;
 	border-style:none;
+}
+a.sign_up_button{
+	padding:0;
+	text-align: center;
 }
 /*******Destinations****/
 section.dest_list_container{
@@ -168,7 +212,7 @@ div.creds_email, div.creds_pw1, div.creds_pw2, div.login_submit{
 }
 
 
-input[type=submit], #user_login_submit_button, button.sign_up_button, .match_contact button{
+input[type=submit], #user_login_submit_button, .sign_up_button, .match_contact button{
 	-moz-box-shadow: 0px 10px 14px -7px #276873;
 	-webkit-box-shadow: 0px 10px 14px -7px #276873;
 	box-shadow: 0px 10px 14px -7px #276873;
@@ -192,7 +236,7 @@ input[type=submit], #user_login_submit_button, button.sign_up_button, .match_con
 	text-decoration:none;
 	text-shadow:0px 1px 0px #3d768a;
 }
-input[type=submit]:hover, #user_login_submit_button:hover, button.sign_up_button:hover, .match_contact button:hover {
+input[type=submit]:hover, #user_login_submit_button:hover, .sign_up_button:hover, .match_contact button:hover {
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #464368), color-stop(1, #599bb3));
 	background:-moz-linear-gradient(top, #464368 5%, #599bb3 100%);
 	background:-webkit-linear-gradient(top, #464368 5%, #599bb3 100%);
@@ -202,7 +246,7 @@ input[type=submit]:hover, #user_login_submit_button:hover, button.sign_up_button
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#464368', endColorstr='#599bb3',GradientType=0);
 	background-color:#464368;
 }
-input[type=submit]:active, #user_login_submit_button:active, button.sign_up_button:active, .match_contact button:active{
+input[type=submit]:active, #user_login_submit_button:active, .sign_up_button:active, .match_contact button:active{
 	position:relative;
 	top:1px;
 }
